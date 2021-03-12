@@ -18,6 +18,7 @@ EOF'
 
 kubectl apply -f /sync/etc/flannel.yaml
 
+sudo systemctl restart sycri
 sudo systemctl daemon-reload
 sudo systemctl restart kubelet
 

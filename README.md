@@ -222,3 +222,6 @@ _NOTE_: `vagrant up` may take about 15 minutes to start as k8s cluster will be i
 
 Vagrant will spin up two VMs: a k8s master and a k8s worker node with Slurm installed.
 If you wish to set up more workers, fell free to modify `N` parameter in [Vagrantfile](./vagrant/Vagrantfile).
+
+Once the virtual `slurm-node-1-debug` node is up, you can add the `wlm.sylabs.io/containers: singularity` label to them: 
+`kubectl label nodes slurm-node-1-debug wlm.sylabs.io/containers=singularity`

@@ -4,3 +4,4 @@ kubectl apply -f wlm-operator/deploy/crds/wlm_v1alpha1_slurmjob.yaml
 kubectl apply -f wlm-operator/deploy/crds/wlm_v1alpha1_wlmjob.yaml
 kubectl apply -f wlm-operator/deploy/operator-rbac.yaml
 kubectl apply -f wlm-operator/deploy/operator.yaml
+kubectl apply -f wlm-operator/deploy/configurator.yaml
